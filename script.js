@@ -26,7 +26,7 @@ $(document).ready(function(){
 					for (var count=0; count<data.query.pageids.length; count++){
 						var index=data.query.pageids[count];
 
-						var titleResult = '<div  class="title" style="width:auto; height:auto; Background:#2a2a2a"><a target="_blank" href="https://en.wikipedia.org/wiki/'+data.query.pages[index].title+'">'+data.query.pages[index].title+'</a></div>';
+						var titleResult = '<div  class="title"><a target="_blank" href="https://en.wikipedia.org/wiki/'+data.query.pages[index].title+'">'+data.query.pages[index].title+'</a></div>';
 						document.querySelector(".wiki").insertAdjacentHTML('beforeend', titleResult);
 
 						var textResult = '<div class="text"><a target="_blank" href="https://en.wikipedia.org/wiki/'+data.query.pages[index].title+'">'+data.query.pages[index].extract+'</a></div>';
