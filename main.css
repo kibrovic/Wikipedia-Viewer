@@ -1,5 +1,11 @@
+a{
+	color: #FFFFFF;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	text-decoration: none;
+}
+
 body{
-	background: linear-gradient(to bottom, #060718, #454DF9);
+	background: linear-gradient(to bottom, #060718, #090929);
 	background-attachment: fixed;
 	color: white;
 }
@@ -15,14 +21,14 @@ input{
 	height: 20px;
 	margin: auto;
 	text-align: center;
-	transition: width 1.0s, height 1.5s;
+	transition: width 0.8s, height 1.0s;
 	width: 150px;
 }
 
 input:focus{
 	border-radius: 10px;
 	border-style: none;
-	font-size: 80px;
+	font-size: 50px;
 	height: 100px;
 	outline: none;
 	width: 90%;
@@ -37,13 +43,21 @@ p{
 #author{
 	bottom: 0;
 	font-size: 0.8em;
-	position: fixed;
-	margin: auto;
+	
+	text-align: center;
 }
 
 #author a{
 	color: #EEECEC;
 	text-align: center;
+}
+
+#search-box{
+	color: #0F973A;
+}
+
+.hidden{
+	display: none;
 }
 
 .random{
@@ -55,28 +69,24 @@ p{
 	text-decoration: underline;
 }
 
+.result{
+	background: linear-gradient(to right, #2A0B4B, #67527E);
+	border-radius: 5px;
+
+}
+
 .text{
-	border-style: groove;
-	border-top: none;
 	margin-top: -20px;
 	padding-top: 10px;
 }
 
-.text a{
-	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-	text-decoration: none;
-
-}
-
 .title{
-	border-bottom: none;
-	border-style: groove;
-	margin-bottom: -10px; 
+	margin-bottom: 10px; 
 	margin-top: 10px;
 }
 
 .title a{
-	color: #96000E;
+	color: #0F973A;
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 	font-size: 1.5em;
 	font-weight: bold;
@@ -84,7 +94,6 @@ p{
 }
 
 .wiki{
-	background: linear-gradient(to right, #435387, #A4A0FF);
 	display: block;
 	margin: auto;
 	margin-top: 10px;
